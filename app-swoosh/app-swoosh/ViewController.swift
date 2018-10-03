@@ -14,10 +14,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         swoosh.frame = CGRect(x: view.frame.size.width / 2 - swoosh.frame.size.width / 2, y: 50, width: swoosh.frame.size.width, height: swoosh.frame.size.height) // view.frame is view's position & size. Mark demonstrates old way of positioning elements on screen--The next lesson will deprecate this, Autolayout.
         
-        bgImg.frame = view.frame
+        bgImg.frame = view.frame */
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
