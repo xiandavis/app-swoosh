@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet weak var swoosh: UIImageView!
-    @IBOutlet weak var bgImg: UIImageView!
+class WelcomeVC: UIViewController {
+    //    @IBOutlet weak var swoosh: UIImageView! /* COMMENT */ Debugging: setValue forUndefinedKey
+    //    @IBOutlet weak var bgImg: UIImageView! /* COMMENT */ Mark demonstrates by deleting these IBOutlets [that were added before we handled them in the storyboard with auto layout, therefore we no longer need these statements] we get the error message: setValue forUndefinedKey. This is because you have to click main.storyboard in Proj Nav, in the Document Outline / View Controller Scene (now called WelcomeVC Scene), control-click [the same VC you deleted the IBOutlets from (VC has the yellow circle in Doc Outline), WelcomeVC] and click 'x's next to outlets showing yellow alert triangle.
     
     override func viewDidLoad() {
         super.viewDidLoad()
