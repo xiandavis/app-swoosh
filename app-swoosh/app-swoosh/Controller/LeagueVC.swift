@@ -42,14 +42,14 @@ class LeagueVC: UIViewController {
         nextBtn.isEnabled = true // allows segue to 3rd VC to operate
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) { // prepare allows you to do things BEFORE the segue changes VCs. This is where you will pass data between VCs!
+        if let skillVC = segue.destination as? SkillVC { // obj-oriented prog allows us to downcast destination obj to SkillVC because SkillVC inherits from UIViewController. This statement takes code from SkillVC and stores it in the skillVC constant.
+            
+            // Below statement assigns player data from this file to player in SkillVC file
+            skillVC.player /* (player       from SkillVC file) */ =
+                    player /* (player from THIS/LeagueVC file) */
+            
+        } // else if let otherVC {}... // Mark demonstrates if we had more than one segue
+        
     }
-    */
-
 }

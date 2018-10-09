@@ -9,6 +9,6 @@
 import Foundation
 
 struct Player { // we access this from the LeagueVC.swift controller file
-    var desiredLeague: String?
-    var selectedSkillLevel: String?
+    var desiredLeague: String! // Mark originally had as optionals (?) but decided these variables are guaranteed to have values so changed to implicitly unwrapped optional (!)
+    var selectedSkillLevel: String!
 }
