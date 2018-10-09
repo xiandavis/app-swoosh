@@ -9,17 +9,21 @@
 import UIKit
 
 class LeagueVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func onNextTapped(_ sender: Any) {
+//        if menWasSelected { // Mark demonstrates how you might choose different segues with if/else statement
+        performSegue(withIdentifier: "skillVCSegue", sender: self) // IB segue (Interface Builder) doesn't require withIdentifier, but programmatic segue does
+//        } else {
+//            performSegue(withIdentifier: "womens", sender: self)
+//        }
     }
+
     
 
     /*
